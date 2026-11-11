@@ -1,0 +1,100 @@
+# Passagem: agente de promoções de passagens aéreas ✈️
+
+Um robô que **pesquisa preços de passagens sozinho, de tempos em tempos**, guarda
+o histórico e **avisa no Telegram** quando encontra uma promoção.
+
+Ele roda de graça no **GitHub Actions** (a cada 6 horas, por padrão), sem precisar
+de computador ligado.
+
+## Quando ele considera "promoção"
+
+Para cada rota, o agente pega a oferta mais barata e avisa se:
+
+1. o preço ficou **abaixo do seu limite** (`preco_maximo`);
+2. o preço está **X% abaixo do típico** daquela rota (mediana das medições
+   anteriores; `queda_minima_pct`, padrão 20%);
+3. é o **menor preço já registrado** pelo agente;
+4. (Google Flights) o próprio Google classifica o preço como **baixo**.
+
+Para não lotar seu celular, ele só repete o aviso da mesma rota depois de 3 dias
+ou se o preço cair pelo menos mais 3%.
+
+## Fontes de preço
+
+| Fonte | Custo | Observações |
+|---|---|---|
+| `travelpayouts` (padrão) | Grátis | Preços do cache da Aviasales. Aceita **o mês inteiro** (`2027-03`) e acha o dia mais barato. |
+| `google_flights` (via SerpApi) | Plano grátis com cota mensal pequena | Preço em tempo real + avaliação "low/typical/high" do Google. Exige datas exatas. |
+
+## Como configurar (passo a passo)
+
+### 1. Escolha as rotas
+
+Edite o [`config.yaml`](config.yaml):
+
+```yaml
+rotas:
+  - origem: SAO        # código IATA (SAO = todos os aeroportos de SP)
+    destino: LIS
+    ida: "2027-03"     # mês inteiro ou data exata "2027-03-15"
+    volta: "2027-03"   # remova para "só ida"
+    preco_maximo: 3500
+```
+
+### 2. Crie as chaves (gratuitas)
+
+- **Travelpayouts:** crie uma conta em <https://www.travelpayouts.com/> e copie o
+  *API token* no seu perfil.
+- **Bot do Telegram:**
+  1. No Telegram, fale com **@BotFather**, envie `/newbot` e copie o **token**.
+  2. Mande qualquer mensagem para o seu bot novo.
+  3. Abra `https://api.telegram.org/bot<TOKEN>/getUpdates` no navegador e copie
+     o número em `"chat":{"id": ...}`. Esse é o **chat id**.
+- *(Opcional)* **SerpApi** para Google Flights: <https://serpapi.com/>.
+
+### 3. Cadastre as chaves no GitHub
+
+No repositório: **Settings → Secrets and variables → Actions → New repository secret**:
+
+| Nome | Valor |
+|---|---|
+| `TRAVELPAYOUTS_TOKEN` | token da Travelpayouts |
+| `TELEGRAM_BOT_TOKEN` | token do BotFather |
+| `TELEGRAM_CHAT_ID` | seu chat id |
+| `SERPAPI_KEY` | *(opcional)* chave da SerpApi |
+
+### 4. Ligue o agente
+
+- Em **Settings → Actions → General → Workflow permissions**, marque
+  **Read and write permissions**. Assim o agente consegue salvar o histórico de preços.
+- Na aba **Actions**, abra *Monitorar passagens* e clique em **Run workflow**
+  para testar na hora.
+
+> ⚠️ Agendamentos do GitHub Actions só funcionam no **branch padrão** do
+> repositório. Depois de juntar estas mudanças no `main`, ele passa a rodar sozinho.
+
+Para mudar a frequência, edite a linha `cron` em
+[`.github/workflows/monitorar.yml`](.github/workflows/monitorar.yml).
+
+## Rodar no seu computador
+
+```bash
+pip install -r requirements.txt
+export TRAVELPAYOUTS_TOKEN=...
+python -m agente --simular   # só mostra na tela, sem Telegram e sem salvar histórico
+python -m agente             # execução normal
+```
+
+Testes: `pip install pytest && python -m pytest`
+
+## Estrutura
+
+```
+agente/
+  __main__.py        # orquestra: busca → analisa → avisa → salva histórico
+  analise.py         # regras de "é promoção?"
+  historico.py       # histórico de preços em data/historico.json
+  notificacao.py     # mensagens do Telegram
+  fontes/            # integrações com as APIs de preço
+config.yaml          # suas rotas
+```

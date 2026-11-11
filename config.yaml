@@ -1,0 +1,33 @@
+# Configuração do agente de promoções de passagens.
+# Edite as rotas abaixo com os trechos que você quer acompanhar.
+# Códigos de aeroporto/cidade IATA: GRU (Guarulhos), SAO (todos de SP),
+# RIO, GIG, BSB, CNF, SSA, REC, FOR, POA, LIS, MAD, MIA, ORL, NYC, PAR...
+
+moeda: BRL
+
+# Valores aplicados a todas as rotas (cada rota pode sobrescrever).
+padrao:
+  fonte: travelpayouts      # "travelpayouts" (grátis) ou "google_flights" (SerpApi)
+  queda_minima_pct: 20      # avisa se o preço cair X% abaixo do típico
+  apenas_direto: false
+
+rotas:
+  - origem: SAO
+    destino: LIS
+    ida: "2027-03"          # mês inteiro: procura o dia mais barato
+    volta: "2027-03"
+    preco_maximo: 3500      # avisa sempre que ficar abaixo deste valor
+
+  - origem: SAO
+    destino: REC
+    ida: "2027-01"
+    volta: "2027-01"
+    preco_maximo: 900
+
+  # Exemplo com Google Flights (precisa de datas exatas e de SERPAPI_KEY):
+  # - origem: GRU
+  #   destino: MIA
+  #   ida: "2027-02-10"
+  #   volta: "2027-02-20"
+  #   fonte: google_flights
+  #   preco_maximo: 3000
