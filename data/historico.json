@@ -8,6 +8,10 @@
       {
         "quando": "2026-11-13T12:58:00+00:00",
         "preco": 800.0
+      },
+      {
+        "quando": "2026-11-13T13:01:30+00:00",
+        "preco": 800.0
       }
     ],
     "ultimo_alerta": null
@@ -16,6 +20,10 @@
     "precos": [
       {
         "quando": "2026-11-13T12:58:16+00:00",
+        "preco": 2440.0
+      },
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
         "preco": 2440.0
       }
     ],
@@ -26,6 +34,10 @@
       {
         "quando": "2026-11-13T12:58:27+00:00",
         "preco": 1196.0
+      },
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 1196.0
       }
     ],
     "ultimo_alerta": null
@@ -35,6 +47,10 @@
       {
         "quando": "2026-11-13T12:58:39+00:00",
         "preco": 1976.0
+      },
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 1976.0
       }
     ],
     "ultimo_alerta": null
@@ -43,6 +59,10 @@
     "precos": [
       {
         "quando": "2026-11-13T12:58:39+00:00",
+        "preco": 1011.0
+      },
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
         "preco": 1011.0
       }
     ],
@@ -109,7 +129,234 @@
       "https://www.melhoresdestinos.com.br/?post_type=promocao&p=647169",
       "https://www.melhoresdestinos.com.br/?post_type=promocao&p=647160",
       "https://www.melhoresdestinos.com.br/?p=647067",
-      "https://www.melhoresdestinos.com.br/?p=646894"
-    ]
+      "https://www.melhoresdestinos.com.br/?p=646894",
+      "https://passageirodeprimeira.com/?p=581840"
+    ],
+    "explorar_ultima_execucao": "2026-11-13T13:01:32+00:00"
+  },
+  "NAT-Los Angeles_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 5095.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "NAT-Miami_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 5456.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "NAT-Nova Iorque_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 5572.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "NAT-Barcelona_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 5332.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "NAT-Lisboa_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 6435.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "NAT-Londres_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 6877.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "NAT-Madrid_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 5857.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "NAT-Roma_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 6013.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "JPA-Miami_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 6220.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "JPA-Lisboa_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 4890.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "JPA-Paris_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:31+00:00",
+        "preco": 7768.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Los Angeles_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 6888.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Miami_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 5306.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Nova Iorque_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 5107.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Amsterdã_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 5297.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Atenas_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 5806.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Barcelona_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 4772.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Dublin_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 5389.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Istambul_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 8567.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Lisboa_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 4672.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Londres_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 4871.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Madrid_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 4750.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Malta_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 6590.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Paris_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 5168.0
+      }
+    ],
+    "ultimo_alerta": null
+  },
+  "REC-Roma_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 5051.0
+      }
+    ],
+    "ultimo_alerta": null
   }
 }
