@@ -13,8 +13,10 @@ Para cada rota, o agente pega a oferta mais barata e avisa se:
 1. o preço ficou **abaixo do seu limite** (`preco_maximo`);
 2. o preço está **X% abaixo do típico** daquela rota (mediana das medições
    anteriores; `queda_minima_pct`, padrão 20%);
-3. é o **menor preço já registrado** pelo agente;
-4. (Google Flights) o próprio Google classifica o preço como **baixo**.
+3. (Google Flights) o próprio Google classifica o preço como **baixo**.
+
+Se, além disso, for o **menor preço já registrado**, o aviso diz isso também.
+O critério 2 precisa de pelo menos 5 medições da rota (uns 5 dias) para começar.
 
 Para não lotar seu celular, ele só repete o aviso da mesma rota depois de 3 dias
 ou se o preço cair pelo menos mais 3%.
