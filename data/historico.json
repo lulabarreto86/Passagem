@@ -20,6 +20,10 @@
       {
         "quando": "2026-11-13T13:13:55+00:00",
         "preco": 800.0
+      },
+      {
+        "quando": "2026-11-13T18:58:39+00:00",
+        "preco": 800.0
       }
     ],
     "ultimo_alerta": null,
@@ -164,7 +168,27 @@
       "https://www.melhoresdestinos.com.br/?p=647067",
       "https://www.melhoresdestinos.com.br/?p=646894",
       "https://passageirodeprimeira.com/?p=581840",
-      "https://pontospravoar.com/?p=149526"
+      "https://pontospravoar.com/?p=149526",
+      "https://passageirodeprimeira.com/?p=581861",
+      "https://passageirodeprimeira.com/?p=580943",
+      "https://passageirodeprimeira.com/?p=581877",
+      "https://passageirodeprimeira.com/?p=579775",
+      "https://passageirodeprimeira.com/?p=581900",
+      "https://passageirodeprimeira.com/?p=581897",
+      "https://passageirodeprimeira.com/?p=581921",
+      "https://passageirodeprimeira.com/?p=581881",
+      "https://passageirodeprimeira.com/?p=581848",
+      "https://pontospravoar.com/?p=149849",
+      "https://pontospravoar.com/?p=149876",
+      "https://pontospravoar.com/?p=149881",
+      "https://pontospravoar.com/?p=149859",
+      "https://pontospravoar.com/?p=149846",
+      "https://pontospravoar.com/?p=149840",
+      "https://pontospravoar.com/?p=149769",
+      "https://pontospravoar.com/?p=149805",
+      "https://pontospravoar.com/?p=149761",
+      "https://pontospravoar.com/?p=149753",
+      "https://pontospravoar.com/?p=149802"
     ],
     "explorar_ultima_execucao": "2026-11-13T13:01:32+00:00",
     "resumo_ultimo_envio": "2026-11-13"
