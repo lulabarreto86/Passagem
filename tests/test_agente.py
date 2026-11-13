@@ -126,3 +126,51 @@ def test_mes_de_dezembro_vira_janeiro():
     from agente.fontes.travelpayouts import _voltas
 
     assert _voltas(rota(ida="2027-12", volta=None, dias_min=5)) == ["2027-12", "2028-01"]
+
+
+def test_explorar_filtra_grupos_e_duracao(monkeypatch, tmp_path):
+    from agente import explorar
+    from agente.fontes import google_explore
+
+    def falso(origem, mes, duracao, moeda):
+        base = {"aeroporto": "X", "escalas": 1, "companhia": "Gol", "link": "l"}
+        if duracao == "1 semana":
+            return [
+                {**base, "nome": "Lisboa", "pais": "Portugal", "preco": 4600, "ida": "2027-04-19", "volta": "2027-04-28"},
+                {**base, "nome": "Paris", "pais": "França", "preco": 5100, "ida": "2027-04-05", "volta": "2027-04-12"},
+                {**base, "nome": "Tóquio", "pais": "Japão", "preco": 9000, "ida": "2027-04-05", "volta": "2027-04-15"},
+                {**base, "nome": "Rio de Janeiro", "pais": "Brasil", "preco": 1100, "ida": "2027-04-05", "volta": "2027-04-11"},
+            ]
+        return [{**base, "nome": "Lisboa", "pais": "Portugal", "preco": 4400, "ida": "2027-04-01", "volta": "2027-04-15"}]
+
+    monkeypatch.setattr(google_explore, "explorar", falso)
+    cfg = {
+        "origens": ["REC"], "mes": "2027-04",
+        "grupos": [
+            {"nome": "Europa", "dias_min": 9, "dias_max": 12, "paises": ["Portugal", "França"], "preco_maximo": 5000},
+            {"nome": "BR", "dias_min": 5, "dias_max": 7, "destinos": ["Rio de Janeiro"]},
+        ],
+    }
+    h = Historico(tmp_path / "h.json")
+    promos = explorar.executar(cfg, "BRL", h)
+    # Lisboa 9 dias por 4600 entra (a de 14 dias, mais barata, fica de fora); Paris tem 7 dias.
+    assert [(p.rota.destino, p.oferta.preco) for p in promos] == [("Lisboa", 4600)]
+    assert h.precos("REC-Rio de Janeiro_2027-04_5a7dias_google_explore") == [1100]
+    # Na segunda vez, no mesmo dia, não gasta cota.
+    assert not explorar.deve_rodar(cfg, h)
+
+
+def test_milhas_primeira_vez_so_memoriza(monkeypatch, tmp_path):
+    from agente import milhas
+
+    itens = [{"titulo": "Europa por 40 mil milhas Smiles", "link": "a", "id": "a", "categorias": ""},
+             {"titulo": "Cartão novo", "link": "b", "id": "b", "categorias": ""}]
+    monkeypatch.setattr(milhas, "ler_feed", lambda url: list(itens))
+    cfg = {"feeds": ["f"], "palavras": ["smiles"], "destaques": ["europa"]}
+    h = Historico(tmp_path / "h.json")
+    assert milhas.verificar(cfg, h) == []
+    itens.append({"titulo": "Recife: promoção Smiles com 50% de bônus", "link": "c", "id": "c", "categorias": ""})
+    itens.append({"titulo": "Europa barata na Smiles", "link": "d", "id": "d", "categorias": ""})
+    msgs = milhas.verificar(cfg, h)
+    assert len(msgs) == 2 and "⭐" in msgs[1] and "⭐" not in msgs[0]
+    assert milhas.verificar(cfg, h) == []

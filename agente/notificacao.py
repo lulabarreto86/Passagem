@@ -25,7 +25,9 @@ def montar_mensagem(p: Promocao) -> str:
         linhas.append(f"📅 {datas}")
     aeroporto = o.extras.get("aeroporto_origem")
     if aeroporto and aeroporto != p.rota.origem:
-        linhas.append(f"🛬 Saindo do aeroporto {aeroporto}")
+        linhas.append(f"📍 Saindo do aeroporto {aeroporto}")
+    if o.extras.get("aeroporto_destino"):
+        linhas.append(f"🛬 Chegando em {o.extras['aeroporto_destino']}")
     detalhes = []
     if o.companhia:
         detalhes.append(o.companhia)
@@ -39,10 +41,12 @@ def montar_mensagem(p: Promocao) -> str:
     return "\n".join(linhas)
 
 
-def enviar(promocoes: list[Promocao], simular: bool = False) -> None:
-    if not promocoes:
+def enviar(
+    promocoes: list[Promocao], simular: bool = False, outras: list[str] | None = None
+) -> None:
+    mensagens = [montar_mensagem(p) for p in promocoes] + list(outras or [])
+    if not mensagens:
         return
-    mensagens = [montar_mensagem(p) for p in promocoes]
     for m in mensagens:
         print(m, end="\n\n")
 
@@ -69,6 +73,6 @@ def _resumo_github(mensagens: list[str]) -> None:
     if not caminho:
         return
     with open(caminho, "a", encoding="utf-8") as f:
-        f.write("## Promoções encontradas\n\n")
+        f.write("## Alertas enviados\n\n")
         for m in mensagens:
             f.write(m.replace("\n", "  \n") + "\n\n---\n\n")

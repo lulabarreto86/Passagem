@@ -8,13 +8,17 @@ from pathlib import Path
 
 import yaml
 
-from . import analise, fontes, notificacao
+from . import analise, explorar, fontes, milhas, notificacao
 from .historico import Historico
 from .modelos import Rota
 
 
+def ler_yaml(caminho: Path) -> dict:
+    return yaml.safe_load(caminho.read_text(encoding="utf-8")) or {}
+
+
 def carregar_config(caminho: Path) -> tuple[str, list[Rota]]:
-    cfg = yaml.safe_load(caminho.read_text(encoding="utf-8")) or {}
+    cfg = ler_yaml(caminho)
     padrao = cfg.get("padrao", {}) or {}
     rotas = []
     for item in cfg.get("rotas", []) or []:
@@ -46,6 +50,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--simular", action="store_true", help="não envia Telegram nem salva histórico"
     )
+    parser.add_argument(
+        "--forcar-explorar",
+        action="store_true",
+        help="roda a busca do Google mesmo que já tenha rodado há pouco",
+    )
     args = parser.parse_args(argv)
 
     moeda, rotas = carregar_config(args.config)
@@ -76,7 +85,13 @@ def main(argv: list[str] | None = None) -> int:
             promocoes.append(promocao)
             historico.marcar_alerta(rota.chave, melhor.preco)
 
-    notificacao.enviar(promocoes, simular=args.simular)
+    cfg = ler_yaml(args.config)
+    promocoes += explorar.executar(
+        cfg.get("explorar"), moeda, historico, forcar=args.forcar_explorar
+    )
+    avisos_milhas = milhas.verificar(cfg.get("milhas"), historico)
+
+    notificacao.enviar(promocoes, simular=args.simular, outras=avisos_milhas)
     if not args.simular:
         historico.salvar()
 

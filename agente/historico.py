@@ -38,6 +38,12 @@ class Historico:
             "preco": preco,
         }
 
+    def meta(self, nome: str):
+        return self.dados.get("_meta", {}).get(nome)
+
+    def definir_meta(self, nome: str, valor) -> None:
+        self.dados.setdefault("_meta", {})[nome] = valor
+
     def salvar(self) -> None:
         self.caminho.parent.mkdir(parents=True, exist_ok=True)
         self.caminho.write_text(

@@ -6,7 +6,7 @@ o histórico e **avisa no Telegram** quando encontra uma promoção.
 Ele roda de graça no **GitHub Actions** (a cada 6 horas, por padrão), sem precisar
 de computador ligado.
 
-## Quando ele considera "promoção"
+## Quando ele considera "promoção" (passagens em dinheiro)
 
 Para cada rota, o agente pega a oferta mais barata e avisa se:
 
@@ -19,12 +19,13 @@ Para cada rota, o agente pega a oferta mais barata e avisa se:
 Para não lotar seu celular, ele só repete o aviso da mesma rota depois de 3 dias
 ou se o preço cair pelo menos mais 3%.
 
-## Fontes de preço
+## Fontes
 
-| Fonte | Custo | Observações |
-|---|---|---|
-| `travelpayouts` (padrão) | Grátis | Preços do cache da Aviasales. Aceita **o mês inteiro** (`2027-03`) e acha o dia mais barato. |
-| `google_flights` (via SerpApi) | Plano grátis com cota mensal pequena | Preço em tempo real + avaliação "low/typical/high" do Google. Exige datas exatas. |
+| Seção do `config.yaml` | Fonte | Custo | Observações |
+|---|---|---|---|
+| `explorar` | "Explorar" do Google Flights (SerpApi) | Grátis até 250 buscas/mês | **Fonte principal.** Uma busca traz ~90 destinos a partir de uma cidade. Filtra por cidades/países e duração em dias. Roda 1x por dia para caber na cota. |
+| `rotas` | Travelpayouts (cache da Aviasales) | Grátis | Complemento, roda a cada 6h. Bom para rotas populares; tem poucos dados para origens menores e datas distantes. |
+| `milhas` | Blogs de milhas (RSS) | Grátis | Avisa notícias de promoções da **Smiles** (ou outras palavras). Não acessa o site da Smiles. |
 
 ## Como configurar (passo a passo)
 
@@ -50,7 +51,7 @@ rotas:
   2. Mande qualquer mensagem para o seu bot novo.
   3. Abra `https://api.telegram.org/bot<TOKEN>/getUpdates` no navegador e copie
      o número em `"chat":{"id": ...}`. Esse é o **chat id**.
-- *(Opcional)* **SerpApi** para Google Flights: <https://serpapi.com/>.
+- **SerpApi** (busca do Google Flights): crie a conta em <https://serpapi.com/> e copie a *API key*.
 
 ### 3. Cadastre as chaves no GitHub
 
@@ -61,7 +62,7 @@ No repositório: **Settings → Secrets and variables → Actions → New reposi
 | `TRAVELPAYOUTS_TOKEN` | token da Travelpayouts |
 | `TELEGRAM_BOT_TOKEN` | token do BotFather |
 | `TELEGRAM_CHAT_ID` | seu chat id |
-| `SERPAPI_KEY` | *(opcional)* chave da SerpApi |
+| `SERPAPI_KEY` | chave da SerpApi |
 
 ### 4. Ligue o agente
 
@@ -93,6 +94,8 @@ Testes: `pip install pytest && python -m pytest`
 agente/
   __main__.py        # orquestra: busca → analisa → avisa → salva histórico
   analise.py         # regras de "é promoção?"
+  explorar.py        # busca "Explorar" do Google (várias origens × destinos)
+  milhas.py          # promoções de milhas lidas dos blogs (RSS)
   historico.py       # histórico de preços em data/historico.json
   notificacao.py     # mensagens do Telegram
   fontes/            # integrações com as APIs de preço

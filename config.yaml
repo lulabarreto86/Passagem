@@ -1,52 +1,69 @@
 # Configuração do agente de promoções de passagens.
-#
-# Cada regra abaixo pode ter VÁRIAS origens e VÁRIOS destinos: o agente
-# pesquisa todas as combinações e acompanha o preço de cada uma separadamente.
-#
-# Campos de cada regra:
-#   origem / destino   código IATA ou lista de códigos (veja a lista no fim)
-#   ida                "AAAA-MM" (mês inteiro) ou "AAAA-MM-DD"
-#   volta              opcional; mês ou data da volta
-#   dias_min/dias_max  duração da viagem em dias (ida e volta)
-#   preco_maximo       opcional; avisa sempre que ficar abaixo deste valor
-#   queda_minima_pct   avisa quando o preço ficar X% abaixo do típico da rota
-
 moeda: BRL
 
+# ---------------------------------------------------------------------------
+# 1) Busca "Explorar" do Google Flights (SerpApi). Fonte principal.
+#    Cada busca traz ~90 destinos de uma vez a partir de uma cidade de origem.
+#    Cota grátis: 250 buscas/mês. Aqui: 3 origens × 2 durações = 6 buscas por
+#    execução, 1 execução por dia ≈ 180 buscas/mês.
+# ---------------------------------------------------------------------------
+explorar:
+  origens: [NAT, JPA, REC]
+  mes: "2027-04"
+  duracoes: ["1 semana", "2 semanas"]   # opções: "fim de semana", "1 semana", "2 semanas"
+  intervalo_horas: 23                   # roda no máximo 1x por dia
+  queda_minima_pct: 20                  # avisa quando ficar 20% abaixo do típico
+
+  grupos:
+    - nome: Brasil e América do Sul
+      dias_min: 5
+      dias_max: 7
+      destinos: [São Paulo, Rio de Janeiro, Belo Horizonte, Buenos Aires]
+
+    - nome: Estados Unidos
+      dias_min: 9
+      dias_max: 12
+      destinos: [Miami, Nova Iorque, Los Angeles, São Francisco]
+
+    - nome: Europa
+      dias_min: 9
+      dias_max: 12
+      # Qualquer cidade desses países (os nomes são os que o Google usa).
+      paises: [Portugal, Espanha, França, Itália, Reino Unido, Irlanda,
+               Países Baixos, Holanda, Bélgica, Alemanha, Suíça, Áustria,
+               República Tcheca, Tchéquia, Hungria, Polônia, Grécia, Croácia,
+               Dinamarca, Suécia, Noruega, Finlândia, Islândia, Malta, Turquia]
+
+# ---------------------------------------------------------------------------
+# 2) Travelpayouts (grátis, sem cota). Complementa voos nacionais.
+#    Roda a cada 6 horas. Tem poucos dados para datas distantes.
+# ---------------------------------------------------------------------------
 padrao:
   fonte: travelpayouts
   queda_minima_pct: 20
   apenas_direto: false
 
 rotas:
-  - nome: Brasil e América do Sul
+  - nome: Nacional
     origem: [NAT, JPA, REC]
-    destino: [SAO, RIO, BHZ, BUE]
+    destino: [SAO, BHZ]
     ida: "2027-04"
     dias_min: 5
     dias_max: 7
 
-  - nome: Estados Unidos
-    origem: [NAT, JPA, REC]
-    destino: [MIA, NYC, LAX, SFO]
-    ida: "2027-04"
-    dias_min: 9
-    dias_max: 12
+# ---------------------------------------------------------------------------
+# 3) Promoções de milhas (Smiles), lidas dos blogs de milhas. Grátis.
+# ---------------------------------------------------------------------------
+milhas:
+  palavras: [smiles]          # avisa notícias que mencionem estas palavras
+  # Notícias que citam estes termos no título ganham uma ⭐ no aviso.
+  destaques: [natal, recife, joão pessoa, nordeste, europa, portugal, lisboa,
+              estados unidos, eua, miami, nova york, orlando, buenos aires]
+  feeds:
+    - https://passageirodeprimeira.com/feed/
+    - https://pontospravoar.com/feed/
+    - https://www.melhoresdestinos.com.br/feed
 
-  - nome: Europa
-    origem: [NAT, JPA, REC]
-    # Principais portas de entrada da Europa saindo do Nordeste.
-    # Pode acrescentar ou tirar cidades à vontade.
-    destino: [LIS, OPO, MAD, BCN, PAR, ROM, MIL, LON, AMS, FRA]
-    ida: "2027-04"
-    dias_min: 9
-    dias_max: 12
-
-# Códigos úteis:
-#   Nordeste: NAT Natal, JPA João Pessoa, REC Recife, FOR Fortaleza, SSA Salvador
-#   Sudeste:  SAO São Paulo (todos), RIO Rio (todos), BHZ Belo Horizonte (todos)
-#   Américas: BUE Buenos Aires, SCL Santiago, MIA Miami, ORL Orlando,
-#             NYC Nova York, LAX Los Angeles, SFO São Francisco
-#   Europa:   LIS Lisboa, OPO Porto, MAD Madri, BCN Barcelona, PAR Paris,
-#             ROM Roma, MIL Milão, LON Londres, AMS Amsterdã, FRA Frankfurt,
-#             MUC Munique, ZRH Zurique, BER Berlim, VIE Viena, PRG Praga
+# Códigos IATA úteis para "rotas":
+#   NAT Natal, JPA João Pessoa, REC Recife, FOR Fortaleza, SSA Salvador,
+#   SAO São Paulo (todos), RIO Rio (todos), BHZ Belo Horizonte (todos)
