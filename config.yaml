@@ -21,13 +21,17 @@ explorar:
       destinos: [São Paulo, Rio de Janeiro, Belo Horizonte, Buenos Aires]
 
     - nome: Estados Unidos
-      dias_min: 9
-      dias_max: 12
+      # Você quer 9 a 12 dias; o monitoramento aceita 7 a 15 porque o Google
+      # só busca por "1 semana" ou "2 semanas". O aviso mostra os dias exatos.
+      dias_min: 7
+      dias_max: 15
       destinos: [Miami, Nova Iorque, Los Angeles, São Francisco]
 
     - nome: Europa
-      dias_min: 9
-      dias_max: 12
+      # Você quer 9 a 12 dias; o monitoramento aceita 7 a 15 porque o Google
+      # só busca por "1 semana" ou "2 semanas". O aviso mostra os dias exatos.
+      dias_min: 7
+      dias_max: 15
       # Qualquer cidade desses países (os nomes são os que o Google usa).
       paises: [Portugal, Espanha, França, Itália, Reino Unido, Irlanda,
                Países Baixos, Holanda, Bélgica, Alemanha, Suíça, Áustria,
