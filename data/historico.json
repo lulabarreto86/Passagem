@@ -12,6 +12,10 @@
       {
         "quando": "2026-11-13T13:01:30+00:00",
         "preco": 800.0
+      },
+      {
+        "quando": "2026-11-13T13:08:04+00:00",
+        "preco": 800.0
       }
     ],
     "ultimo_alerta": null,
@@ -155,9 +159,11 @@
       "https://www.melhoresdestinos.com.br/?post_type=promocao&p=647160",
       "https://www.melhoresdestinos.com.br/?p=647067",
       "https://www.melhoresdestinos.com.br/?p=646894",
-      "https://passageirodeprimeira.com/?p=581840"
+      "https://passageirodeprimeira.com/?p=581840",
+      "https://pontospravoar.com/?p=149526"
     ],
-    "explorar_ultima_execucao": "2026-11-13T13:01:32+00:00"
+    "explorar_ultima_execucao": "2026-11-13T13:01:32+00:00",
+    "resumo_ultimo_envio": "2026-11-13"
   },
   "NAT-Los Angeles_2027-04_7a15dias_google_explore": {
     "precos": [
