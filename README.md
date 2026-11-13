@@ -21,6 +21,14 @@ O critério 2 precisa de pelo menos 5 medições da rota (uns 5 dias) para come�
 Para não lotar seu celular, ele só repete o aviso da mesma rota depois de 3 dias
 ou se o preço cair pelo menos mais 3%.
 
+## Resumo semanal
+
+Todo domingo, por volta das 9h (horário do Nordeste), o bot manda um resumo com o
+menor preço de cada destino e a variação em relação à semana anterior, mesmo sem
+promoção. Configure na seção `resumo_semanal` do `config.yaml`. Para receber um
+resumo na hora: aba **Actions → Monitorar passagens → Run workflow**, marcando
+"Enviar o resumo semanal agora".
+
 ## Fontes
 
 | Seção do `config.yaml` | Fonte | Custo | Observações |

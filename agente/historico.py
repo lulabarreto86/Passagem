@@ -22,8 +22,12 @@ class Historico:
     def precos(self, chave: str) -> list[float]:
         return [p["preco"] for p in self._rota(chave)["precos"]]
 
-    def registrar(self, chave: str, preco: float, quando: datetime | None = None) -> None:
+    def registrar(
+        self, chave: str, preco: float, quando: datetime | None = None, info: dict | None = None
+    ) -> None:
         quando = quando or datetime.now(timezone.utc)
+        if info:
+            self._rota(chave)["info"] = info  # grupo, origem e destino (para o resumo)
         lista = self._rota(chave)["precos"]
         lista.append({"quando": quando.isoformat(timespec="seconds"), "preco": preco})
         del lista[:-MAX_REGISTROS]
@@ -37,6 +41,9 @@ class Historico:
             "quando": quando.isoformat(timespec="seconds"),
             "preco": preco,
         }
+
+    def rotas(self) -> dict[str, dict]:
+        return {k: v for k, v in self.dados.items() if not k.startswith("_")}
 
     def meta(self, nome: str):
         return self.dados.get("_meta", {}).get(nome)

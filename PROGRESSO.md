@@ -16,5 +16,6 @@
 - [x] Trocar as rotas de exemplo pelas viagens reais (abril/2027 saindo de Natal, João Pessoa e Recife)
 - [x] Criar conta na SerpApi e cadastrar `SERPAPI_KEY` no GitHub
 - [x] Busca "Explorar" do Google Flights (1x por dia) + alertas de promoções Smiles pelos blogs de milhas
+- [x] Resumo semanal aos domingos (~9h)
 - [ ] Acompanhar os primeiros dias: os alertas de "abaixo do normal" começam depois de ~5 dias de histórico
 - [ ] (Opcional) Seats.aero para acompanhar a quantidade exata de milhas por rota (pago)

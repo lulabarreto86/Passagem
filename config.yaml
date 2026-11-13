@@ -68,6 +68,15 @@ milhas:
     - https://pontospravoar.com/feed/
     - https://www.melhoresdestinos.com.br/feed
 
+# ---------------------------------------------------------------------------
+# 4) Resumo semanal no Telegram, mesmo sem promoção.
+# ---------------------------------------------------------------------------
+resumo_semanal:
+  dia: domingo        # segunda, terça, ..., domingo
+  hora: 9             # a partir desta hora (o agente roda a cada 6h, chega ~9h20)
+  fuso: America/Recife
+  por_grupo: 6        # quantos destinos mostrar em cada grupo
+
 # Códigos IATA úteis para "rotas":
 #   NAT Natal, JPA João Pessoa, REC Recife, FOR Fortaleza, SSA Salvador,
 #   SAO São Paulo (todos), RIO Rio (todos), BHZ Belo Horizonte (todos)

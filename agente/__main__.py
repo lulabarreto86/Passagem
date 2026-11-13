@@ -8,7 +8,7 @@ from pathlib import Path
 
 import yaml
 
-from . import analise, explorar, fontes, milhas, notificacao
+from . import analise, explorar, fontes, milhas, notificacao, resumo
 from .historico import Historico
 from .modelos import Rota
 
@@ -55,6 +55,9 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="roda a busca do Google mesmo que já tenha rodado há pouco",
     )
+    parser.add_argument(
+        "--resumo", action="store_true", help="envia o resumo semanal agora"
+    )
     args = parser.parse_args(argv)
 
     moeda, rotas = carregar_config(args.config)
@@ -76,7 +79,7 @@ def main(argv: list[str] | None = None) -> int:
         melhor = min(ofertas, key=lambda o: o.preco)
         anteriores = historico.precos(rota.chave)
         promocao = analise.avaliar(rota, melhor, anteriores)
-        historico.registrar(rota.chave, melhor.preco)
+        historico.registrar(rota.chave, melhor.preco, info=rota.info)
 
         status = "PROMO" if promocao else "ok"
         print(f"[{status}] {rota.descricao}: {analise.formatar_preco(melhor.preco, melhor.moeda)}")
@@ -90,6 +93,10 @@ def main(argv: list[str] | None = None) -> int:
         cfg.get("explorar"), moeda, historico, forcar=args.forcar_explorar
     )
     avisos_milhas = milhas.verificar(cfg.get("milhas"), historico)
+    cfg_resumo = cfg.get("resumo_semanal")
+    if cfg_resumo is not None and (args.resumo or resumo.deve_enviar(cfg_resumo, historico)):
+        avisos_milhas.append(resumo.montar(cfg_resumo, historico))
+        resumo.marcar_enviado(cfg_resumo, historico)
 
     notificacao.enviar(promocoes, simular=args.simular, outras=avisos_milhas)
     if not args.simular:

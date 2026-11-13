@@ -14,7 +14,12 @@
         "preco": 800.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Nacional",
+      "origem": "REC",
+      "destino": "SAO"
+    }
   },
   "NAT-Buenos Aires_2027-04_5a7dias_google_explore": {
     "precos": [
@@ -27,7 +32,12 @@
         "preco": 2440.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Brasil e América do Sul",
+      "origem": "NAT",
+      "destino": "Buenos Aires"
+    }
   },
   "JPA-Rio de Janeiro_2027-04_5a7dias_google_explore": {
     "precos": [
@@ -40,7 +50,12 @@
         "preco": 1196.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Brasil e América do Sul",
+      "origem": "JPA",
+      "destino": "Rio de Janeiro"
+    }
   },
   "REC-Buenos Aires_2027-04_5a7dias_google_explore": {
     "precos": [
@@ -53,7 +68,12 @@
         "preco": 1976.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Brasil e América do Sul",
+      "origem": "REC",
+      "destino": "Buenos Aires"
+    }
   },
   "REC-Rio de Janeiro_2027-04_5a7dias_google_explore": {
     "precos": [
@@ -66,7 +86,12 @@
         "preco": 1011.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Brasil e América do Sul",
+      "origem": "REC",
+      "destino": "Rio de Janeiro"
+    }
   },
   "_meta": {
     "milhas_vistos": [
@@ -141,7 +166,12 @@
         "preco": 5095.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "NAT",
+      "destino": "Los Angeles"
+    }
   },
   "NAT-Miami_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -150,7 +180,12 @@
         "preco": 5456.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "NAT",
+      "destino": "Miami"
+    }
   },
   "NAT-Nova Iorque_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -159,7 +194,12 @@
         "preco": 5572.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "NAT",
+      "destino": "Nova Iorque"
+    }
   },
   "NAT-Barcelona_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -168,7 +208,12 @@
         "preco": 5332.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "NAT",
+      "destino": "Barcelona"
+    }
   },
   "NAT-Lisboa_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -177,7 +222,12 @@
         "preco": 6435.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "NAT",
+      "destino": "Lisboa"
+    }
   },
   "NAT-Londres_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -186,7 +236,12 @@
         "preco": 6877.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "NAT",
+      "destino": "Londres"
+    }
   },
   "NAT-Madrid_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -195,7 +250,12 @@
         "preco": 5857.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "NAT",
+      "destino": "Madrid"
+    }
   },
   "NAT-Roma_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -204,7 +264,12 @@
         "preco": 6013.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "NAT",
+      "destino": "Roma"
+    }
   },
   "JPA-Miami_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -213,7 +278,12 @@
         "preco": 6220.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "JPA",
+      "destino": "Miami"
+    }
   },
   "JPA-Lisboa_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -222,7 +292,12 @@
         "preco": 4890.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Lisboa"
+    }
   },
   "JPA-Paris_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -231,7 +306,12 @@
         "preco": 7768.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Paris"
+    }
   },
   "REC-Los Angeles_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -240,7 +320,12 @@
         "preco": 6888.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "REC",
+      "destino": "Los Angeles"
+    }
   },
   "REC-Miami_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -249,7 +334,12 @@
         "preco": 5306.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "REC",
+      "destino": "Miami"
+    }
   },
   "REC-Nova Iorque_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -258,7 +348,12 @@
         "preco": 5107.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "REC",
+      "destino": "Nova Iorque"
+    }
   },
   "REC-Amsterdã_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -267,7 +362,12 @@
         "preco": 5297.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Amsterdã"
+    }
   },
   "REC-Atenas_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -276,7 +376,12 @@
         "preco": 5806.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Atenas"
+    }
   },
   "REC-Barcelona_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -285,7 +390,12 @@
         "preco": 4772.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Barcelona"
+    }
   },
   "REC-Dublin_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -294,7 +404,12 @@
         "preco": 5389.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Dublin"
+    }
   },
   "REC-Istambul_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -303,7 +418,12 @@
         "preco": 8567.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Istambul"
+    }
   },
   "REC-Lisboa_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -312,7 +432,12 @@
         "preco": 4672.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Lisboa"
+    }
   },
   "REC-Londres_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -321,7 +446,12 @@
         "preco": 4871.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Londres"
+    }
   },
   "REC-Madrid_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -330,7 +460,12 @@
         "preco": 4750.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Madrid"
+    }
   },
   "REC-Malta_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -339,7 +474,12 @@
         "preco": 6590.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Malta"
+    }
   },
   "REC-Paris_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -348,7 +488,12 @@
         "preco": 5168.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Paris"
+    }
   },
   "REC-Roma_2027-04_7a15dias_google_explore": {
     "precos": [
@@ -357,6 +502,11 @@
         "preco": 5051.0
       }
     ],
-    "ultimo_alerta": null
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Roma"
+    }
   }
 }

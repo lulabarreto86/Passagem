@@ -174,3 +174,27 @@ def test_milhas_primeira_vez_so_memoriza(monkeypatch, tmp_path):
     msgs = milhas.verificar(cfg, h)
     assert len(msgs) == 2 and "⭐" in msgs[1] and "⭐" not in msgs[0]
     assert milhas.verificar(cfg, h) == []
+
+
+def test_resumo_semanal(tmp_path):
+    from agente import resumo
+
+    agora = datetime(2026, 11, 22, 12, 20, tzinfo=timezone.utc)  # domingo, 9h20 em Recife
+    h = Historico(tmp_path / "h.json")
+    info = {"grupo": "Europa", "origem": "REC", "destino": "Lisboa"}
+    h.registrar("a", 5000, agora - timedelta(days=7), info)
+    h.registrar("a", 4500, agora, info)
+    h.registrar("b", 4800, agora, {"grupo": "Europa", "origem": "NAT", "destino": "Lisboa"})
+    h.registrar("c", 1000, agora, {"grupo": "Nacional", "origem": "REC", "destino": "SAO"})
+    h.registrar("velha", 10, agora - timedelta(days=30), {"grupo": "X", "origem": "A", "destino": "B"})
+
+    cfg = {}
+    assert resumo.deve_enviar(cfg, h, agora)
+    assert not resumo.deve_enviar(cfg, h, agora - timedelta(hours=6))  # 3h20 da manhã
+    assert not resumo.deve_enviar(cfg, h, agora + timedelta(days=1))  # segunda
+    texto = resumo.montar(cfg, h, agora)
+    assert "Lisboa: R$ 4.500 (de Recife) 🔻10%" in texto
+    assert "São Paulo: R$ 1.000" in texto and "B:" not in texto
+    assert texto.index("Nacional") < texto.index("Europa")
+    resumo.marcar_enviado(cfg, h, agora)
+    assert not resumo.deve_enviar(cfg, h, agora + timedelta(hours=6))

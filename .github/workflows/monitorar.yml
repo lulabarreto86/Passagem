@@ -4,7 +4,12 @@ on:
   schedule:
     # A cada 6 horas (horário UTC). Ajuste conforme a cota das APIs.
     - cron: "17 */6 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      resumo:
+        description: "Enviar o resumo semanal agora"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -32,7 +37,7 @@ jobs:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python -m agente
+        run: python -m agente ${{ inputs.resumo && '--resumo' || '' }}
 
       - name: Salvar histórico de preços
         if: always()

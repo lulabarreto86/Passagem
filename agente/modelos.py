@@ -78,6 +78,10 @@ class Rota:
             datas += " (só ida)"
         return f"{trecho} ({datas})"
 
+    @property
+    def info(self) -> dict:
+        return {"grupo": self.nome or "Outros", "origem": self.origem, "destino": self.destino}
+
     def duracao_ok(self, data_ida: str | None, data_volta: str | None) -> bool:
         """Confere se a oferta respeita dias_min/dias_max."""
         if not (self.dias_min or self.dias_max):

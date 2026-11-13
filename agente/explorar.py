@@ -92,7 +92,7 @@ def _avaliar_grupo(origem, mes, grupo, resultados, queda, moeda, historico) -> l
         )
         anteriores = historico.precos(rota.chave)
         promocao = analise.avaliar(rota, oferta, anteriores)
-        historico.registrar(rota.chave, oferta.preco)
+        historico.registrar(rota.chave, oferta.preco, info=rota.info)
         print(
             f"[{'PROMO' if promocao else 'ok'}] {rota.descricao}: "
             f"{analise.formatar_preco(oferta.preco, moeda)} ({r['ida']} a {r['volta']})"
