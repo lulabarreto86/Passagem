@@ -32,14 +32,14 @@ def avaliar(
                 f"{queda:.0f}% abaixo do preço típico ({_fmt(referencia, oferta.moeda)})"
             )
 
-    if precos_anteriores and len(precos_anteriores) >= MIN_AMOSTRAS and oferta.preco < min(precos_anteriores):
-        motivos.append("menor preço já registrado")
-
     if oferta.nivel_preco == "low":
         motivos.append("Google Flights classifica como preço baixo")
 
     if not motivos:
         return None
+    # Informação extra (sozinha não dispara alerta, para não avisar quedas de 1%).
+    if len(precos_anteriores) >= MIN_AMOSTRAS and oferta.preco < min(precos_anteriores):
+        motivos.append("menor preço já registrado")
     return Promocao(rota=rota, oferta=oferta, motivos=motivos, media_historica=referencia)
 
 

@@ -25,6 +25,8 @@ def buscar(rota: Rota, moeda: str) -> list[Oferta]:
     chave = os.environ.get("SERPAPI_KEY")
     if not chave:
         raise RuntimeError("Defina a variável de ambiente SERPAPI_KEY.")
+    if (rota.dias_min or rota.dias_max) and not rota.volta:
+        raise ValueError("google_flights não aceita duração em dias; informe 'volta'.")
     for data in (rota.ida, rota.volta):
         if data and not _DATA_EXATA.match(data):
             raise ValueError(
@@ -39,7 +41,7 @@ def buscar(rota: Rota, moeda: str) -> list[Oferta]:
         "currency": moeda.upper(),
         "hl": "pt-BR",
         "gl": "br",
-        "type": "1" if rota.volta else "2",
+        "type": "1" if rota.ida_e_volta else "2",
         "api_key": chave,
     }
     if rota.volta:

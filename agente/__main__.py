@@ -19,13 +19,24 @@ def carregar_config(caminho: Path) -> tuple[str, list[Rota]]:
     rotas = []
     for item in cfg.get("rotas", []) or []:
         dados = {**padrao, **item}
-        for campo in ("origem", "destino", "ida", "volta"):
+        for campo in ("ida", "volta"):
             if dados.get(campo) is not None:
                 dados[campo] = str(dados[campo]).strip()
-        dados["origem"] = dados["origem"].upper()
-        dados["destino"] = dados["destino"].upper()
-        rotas.append(Rota(**dados))
+        # "origem" e "destino" podem ser um código ou uma lista de códigos:
+        # a regra vira uma rota para cada combinação.
+        origens = _lista(dados.pop("origem"))
+        destinos = _lista(dados.pop("destino"))
+        for origem in origens:
+            for destino in destinos:
+                if origem != destino:
+                    rotas.append(Rota(origem=origem, destino=destino, **dados))
     return str(cfg.get("moeda", "BRL")).upper(), rotas
+
+
+def _lista(valor) -> list[str]:
+    if isinstance(valor, str):
+        valor = valor.split(",")
+    return [str(v).strip().upper() for v in valor if str(v).strip()]
 
 
 def main(argv: list[str] | None = None) -> int:

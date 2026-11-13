@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import os
+from datetime import date
 
 import requests
 
 from .analise import formatar_preco
-from .modelos import Promocao
+from .modelos import Promocao, _data_legivel
 
 
 def montar_mensagem(p: Promocao) -> str:
@@ -16,9 +17,15 @@ def montar_mensagem(p: Promocao) -> str:
         f"✈️ Promoção: {p.rota.descricao}",
         f"💰 {formatar_preco(o.preco, o.moeda)}",
     ]
-    datas = " / ".join(d for d in (o.data_ida, o.data_volta) if d)
+    datas = " a ".join(_data_legivel(d) for d in (o.data_ida, o.data_volta) if d)
+    if o.data_ida and o.data_volta:
+        dias = (date.fromisoformat(o.data_volta) - date.fromisoformat(o.data_ida)).days
+        datas += f" ({dias} dias)"
     if datas:
         linhas.append(f"📅 {datas}")
+    aeroporto = o.extras.get("aeroporto_origem")
+    if aeroporto and aeroporto != p.rota.origem:
+        linhas.append(f"🛬 Saindo do aeroporto {aeroporto}")
     detalhes = []
     if o.companhia:
         detalhes.append(o.companhia)

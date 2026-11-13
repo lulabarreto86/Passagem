@@ -1,33 +1,52 @@
 # Configuração do agente de promoções de passagens.
-# Edite as rotas abaixo com os trechos que você quer acompanhar.
-# Códigos de aeroporto/cidade IATA: GRU (Guarulhos), SAO (todos de SP),
-# RIO, GIG, BSB, CNF, SSA, REC, FOR, POA, LIS, MAD, MIA, ORL, NYC, PAR...
+#
+# Cada regra abaixo pode ter VÁRIAS origens e VÁRIOS destinos: o agente
+# pesquisa todas as combinações e acompanha o preço de cada uma separadamente.
+#
+# Campos de cada regra:
+#   origem / destino   código IATA ou lista de códigos (veja a lista no fim)
+#   ida                "AAAA-MM" (mês inteiro) ou "AAAA-MM-DD"
+#   volta              opcional; mês ou data da volta
+#   dias_min/dias_max  duração da viagem em dias (ida e volta)
+#   preco_maximo       opcional; avisa sempre que ficar abaixo deste valor
+#   queda_minima_pct   avisa quando o preço ficar X% abaixo do típico da rota
 
 moeda: BRL
 
-# Valores aplicados a todas as rotas (cada rota pode sobrescrever).
 padrao:
-  fonte: travelpayouts      # "travelpayouts" (grátis) ou "google_flights" (SerpApi)
-  queda_minima_pct: 20      # avisa se o preço cair X% abaixo do típico
+  fonte: travelpayouts
+  queda_minima_pct: 20
   apenas_direto: false
 
 rotas:
-  - origem: SAO
-    destino: LIS
-    ida: "2027-03"          # mês inteiro: procura o dia mais barato
-    volta: "2027-03"
-    preco_maximo: 3500      # avisa sempre que ficar abaixo deste valor
+  - nome: Brasil e América do Sul
+    origem: [NAT, JPA, REC]
+    destino: [SAO, RIO, BHZ, BUE]
+    ida: "2027-04"
+    dias_min: 5
+    dias_max: 7
 
-  - origem: SAO
-    destino: REC
-    ida: "2027-01"
-    volta: "2027-01"
-    preco_maximo: 900
+  - nome: Estados Unidos
+    origem: [NAT, JPA, REC]
+    destino: [MIA, NYC, LAX, SFO]
+    ida: "2027-04"
+    dias_min: 9
+    dias_max: 12
 
-  # Exemplo com Google Flights (precisa de datas exatas e de SERPAPI_KEY):
-  # - origem: GRU
-  #   destino: MIA
-  #   ida: "2027-02-10"
-  #   volta: "2027-02-20"
-  #   fonte: google_flights
-  #   preco_maximo: 3000
+  - nome: Europa
+    origem: [NAT, JPA, REC]
+    # Principais portas de entrada da Europa saindo do Nordeste.
+    # Pode acrescentar ou tirar cidades à vontade.
+    destino: [LIS, OPO, MAD, BCN, PAR, ROM, MIL, LON, AMS, FRA]
+    ida: "2027-04"
+    dias_min: 9
+    dias_max: 12
+
+# Códigos úteis:
+#   Nordeste: NAT Natal, JPA João Pessoa, REC Recife, FOR Fortaleza, SSA Salvador
+#   Sudeste:  SAO São Paulo (todos), RIO Rio (todos), BHZ Belo Horizonte (todos)
+#   Américas: BUE Buenos Aires, SCL Santiago, MIA Miami, ORL Orlando,
+#             NYC Nova York, LAX Los Angeles, SFO São Francisco
+#   Europa:   LIS Lisboa, OPO Porto, MAD Madri, BCN Barcelona, PAR Paris,
+#             ROM Roma, MIL Milão, LON Londres, AMS Amsterdã, FRA Frankfurt,
+#             MUC Munique, ZRH Zurique, BER Berlim, VIE Viena, PRG Praga
