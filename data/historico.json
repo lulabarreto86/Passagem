@@ -32,6 +32,10 @@
       {
         "quando": "2026-11-14T07:05:24+00:00",
         "preco": 800.0
+      },
+      {
+        "quando": "2026-11-14T12:55:54+00:00",
+        "preco": 800.0
       }
     ],
     "ultimo_alerta": null,
@@ -50,6 +54,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 2440.0
+      },
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 2455.0
       }
     ],
     "ultimo_alerta": null,
@@ -68,6 +76,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 1196.0
+      },
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 972.0
       }
     ],
     "ultimo_alerta": null,
@@ -86,6 +98,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 1976.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 1988.0
       }
     ],
     "ultimo_alerta": null,
@@ -103,6 +119,10 @@
       },
       {
         "quando": "2026-11-13T13:01:32+00:00",
+        "preco": 1011.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
         "preco": 1011.0
       }
     ],
@@ -209,9 +229,13 @@
       "https://pontospravoar.com/?p=149775",
       "https://pontospravoar.com/?p=149853",
       "https://pontospravoar.com/?p=149780",
-      "https://pontospravoar.com/?p=149901"
+      "https://pontospravoar.com/?p=149901",
+      "https://passageirodeprimeira.com/?p=581996",
+      "https://passageirodeprimeira.com/?p=582075",
+      "https://pontospravoar.com/?p=149799",
+      "https://pontospravoar.com/?p=149979"
     ],
-    "explorar_ultima_execucao": "2026-11-13T13:01:32+00:00",
+    "explorar_ultima_execucao": "2026-11-14T12:57:18+00:00",
     "resumo_ultimo_envio": "2026-11-13"
   },
   "NAT-Los Angeles_2027-04_7a15dias_google_explore": {
@@ -219,6 +243,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 5095.0
+      },
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 5603.0
       }
     ],
     "ultimo_alerta": null,
@@ -233,6 +261,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 5456.0
+      },
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 5492.0
       }
     ],
     "ultimo_alerta": null,
@@ -247,6 +279,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 5572.0
+      },
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 5614.0
       }
     ],
     "ultimo_alerta": null,
@@ -261,6 +297,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 5332.0
+      },
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 5408.0
       }
     ],
     "ultimo_alerta": null,
@@ -275,6 +315,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 6435.0
+      },
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 6476.0
       }
     ],
     "ultimo_alerta": null,
@@ -289,6 +333,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 6877.0
+      },
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 6920.0
       }
     ],
     "ultimo_alerta": null,
@@ -303,6 +351,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 5857.0
+      },
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 5895.0
       }
     ],
     "ultimo_alerta": null,
@@ -317,6 +369,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 6013.0
+      },
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 6051.0
       }
     ],
     "ultimo_alerta": null,
@@ -345,6 +401,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 4890.0
+      },
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 4921.0
       }
     ],
     "ultimo_alerta": null,
@@ -359,6 +419,10 @@
       {
         "quando": "2026-11-13T13:01:31+00:00",
         "preco": 7768.0
+      },
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 7772.0
       }
     ],
     "ultimo_alerta": null,
@@ -387,6 +451,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 5306.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 5109.0
       }
     ],
     "ultimo_alerta": null,
@@ -401,6 +469,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 5107.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 5140.0
       }
     ],
     "ultimo_alerta": null,
@@ -415,6 +487,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 5297.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 5330.0
       }
     ],
     "ultimo_alerta": null,
@@ -429,6 +505,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 5806.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 5640.0
       }
     ],
     "ultimo_alerta": null,
@@ -443,6 +523,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 4772.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 4803.0
       }
     ],
     "ultimo_alerta": null,
@@ -457,6 +541,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 5389.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 5424.0
       }
     ],
     "ultimo_alerta": null,
@@ -471,6 +559,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 8567.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 8493.0
       }
     ],
     "ultimo_alerta": null,
@@ -485,6 +577,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 4672.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 4679.0
       }
     ],
     "ultimo_alerta": null,
@@ -499,6 +595,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 4871.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 5012.0
       }
     ],
     "ultimo_alerta": null,
@@ -513,6 +613,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 4750.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 4781.0
       }
     ],
     "ultimo_alerta": null,
@@ -527,6 +631,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 6590.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 6633.0
       }
     ],
     "ultimo_alerta": null,
@@ -541,6 +649,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 5168.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 5483.0
       }
     ],
     "ultimo_alerta": null,
@@ -555,6 +667,10 @@
       {
         "quando": "2026-11-13T13:01:32+00:00",
         "preco": 5051.0
+      },
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 5083.0
       }
     ],
     "ultimo_alerta": null,
@@ -562,6 +678,342 @@
       "grupo": "Europa",
       "origem": "REC",
       "destino": "Roma"
+    }
+  },
+  "NAT-Paris_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:26+00:00",
+        "preco": 5508.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "NAT",
+      "destino": "Paris"
+    }
+  },
+  "JPA-Buenos Aires_2027-04_5a7dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 3201.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Brasil e América do Sul",
+      "origem": "JPA",
+      "destino": "Buenos Aires"
+    }
+  },
+  "JPA-Los Angeles_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 7528.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "JPA",
+      "destino": "Los Angeles"
+    }
+  },
+  "JPA-Nova Iorque_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 5483.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "JPA",
+      "destino": "Nova Iorque"
+    }
+  },
+  "JPA-São Francisco_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 8835.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "JPA",
+      "destino": "São Francisco"
+    }
+  },
+  "JPA-Amsterdã_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 6883.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Amsterdã"
+    }
+  },
+  "JPA-Atenas_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 8006.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Atenas"
+    }
+  },
+  "JPA-Barcelona_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 6527.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Barcelona"
+    }
+  },
+  "JPA-Berlim_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 7449.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Berlim"
+    }
+  },
+  "JPA-Budapeste_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 8199.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Budapeste"
+    }
+  },
+  "JPA-Copenhague_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 8373.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Copenhague"
+    }
+  },
+  "JPA-Dublin_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 9768.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Dublin"
+    }
+  },
+  "JPA-Edimburgo_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 8516.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Edimburgo"
+    }
+  },
+  "JPA-Florença_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 8200.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Florença"
+    }
+  },
+  "JPA-Istambul_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 8498.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Istambul"
+    }
+  },
+  "JPA-Londres_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 7164.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Londres"
+    }
+  },
+  "JPA-Madrid_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 6636.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Madrid"
+    }
+  },
+  "JPA-Malta_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 7866.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Malta"
+    }
+  },
+  "JPA-Praga_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 8146.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Praga"
+    }
+  },
+  "JPA-Roma_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 7361.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Roma"
+    }
+  },
+  "JPA-Santorini_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 9599.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Santorini"
+    }
+  },
+  "JPA-Veneza_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 8202.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Veneza"
+    }
+  },
+  "JPA-Viena_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:56:44+00:00",
+        "preco": 7567.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "JPA",
+      "destino": "Viena"
+    }
+  },
+  "REC-São Francisco_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-14T12:57:18+00:00",
+        "preco": 5751.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Estados Unidos",
+      "origem": "REC",
+      "destino": "São Francisco"
     }
   }
 }
