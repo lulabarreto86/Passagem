@@ -72,6 +72,10 @@
       {
         "quando": "2026-11-16T18:59:50+00:00",
         "preco": 800.0
+      },
+      {
+        "quando": "2026-11-17T01:16:35+00:00",
+        "preco": 800.0
       }
     ],
     "ultimo_alerta": null,
@@ -361,7 +365,24 @@
       "https://pontospravoar.com/?p=150280",
       "https://pontospravoar.com/?p=150231",
       "https://pontospravoar.com/?p=150249",
-      "https://pontospravoar.com/?p=149683"
+      "https://pontospravoar.com/?p=149683",
+      "https://passageirodeprimeira.com/?p=582429",
+      "https://passageirodeprimeira.com/?p=581961",
+      "https://passageirodeprimeira.com/?p=328965",
+      "https://passageirodeprimeira.com/?p=582392",
+      "https://passageirodeprimeira.com/?p=528389",
+      "https://passageirodeprimeira.com/?p=582245",
+      "https://passageirodeprimeira.com/?p=582439",
+      "https://passageirodeprimeira.com/?p=582301",
+      "https://passageirodeprimeira.com/?p=582438",
+      "https://passageirodeprimeira.com/?p=581636",
+      "https://passageirodeprimeira.com/?p=582342",
+      "https://pontospravoar.com/?p=150184",
+      "https://pontospravoar.com/?p=150319",
+      "https://pontospravoar.com/?p=150169",
+      "https://pontospravoar.com/?p=150298",
+      "https://pontospravoar.com/?p=150288",
+      "https://pontospravoar.com/?p=150263"
     ],
     "explorar_ultima_execucao": "2026-11-16T15:12:44+00:00",
     "resumo_ultimo_envio": "2026-11-15"
