@@ -154,6 +154,10 @@
       {
         "quando": "2026-11-23T01:19:54+00:00",
         "preco": 2555.0
+      },
+      {
+        "quando": "2026-11-24T01:16:45+00:00",
+        "preco": 2555.0
       }
     ],
     "ultimo_alerta": null,
@@ -199,6 +203,10 @@
       },
       {
         "quando": "2026-11-23T01:20:07+00:00",
+        "preco": 970.0
+      },
+      {
+        "quando": "2026-11-24T01:16:57+00:00",
         "preco": 970.0
       }
     ],
@@ -246,6 +254,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 2065.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 2065.0
       }
     ],
     "ultimo_alerta": null,
@@ -291,6 +303,10 @@
       },
       {
         "quando": "2026-11-23T01:20:36+00:00",
+        "preco": 999.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
         "preco": 999.0
       }
     ],
@@ -731,9 +747,23 @@
       "https://pontospravoar.com/?p=151331",
       "https://pontospravoar.com/?p=151314",
       "https://pontospravoar.com/?p=151224",
-      "https://www.melhoresdestinos.com.br/?post_type=promocao&p=648805"
+      "https://www.melhoresdestinos.com.br/?post_type=promocao&p=648805",
+      "https://passageirodeprimeira.com/?p=343832",
+      "https://passageirodeprimeira.com/?p=584031",
+      "https://passageirodeprimeira.com/?p=584264",
+      "https://passageirodeprimeira.com/?p=584351",
+      "https://passageirodeprimeira.com/?p=584216",
+      "https://passageirodeprimeira.com/?p=583644",
+      "https://pontospravoar.com/?p=151245",
+      "https://pontospravoar.com/?p=151253",
+      "https://pontospravoar.com/?p=150500",
+      "https://pontospravoar.com/?p=151228",
+      "https://pontospravoar.com/?p=151320",
+      "https://pontospravoar.com/?p=151382",
+      "https://pontospravoar.com/?p=151339",
+      "https://pontospravoar.com/?p=151420"
     ],
-    "explorar_ultima_execucao": "2026-11-23T01:20:36+00:00",
+    "explorar_ultima_execucao": "2026-11-24T01:17:21+00:00",
     "resumo_ultimo_envio": "2026-11-22"
   },
   "NAT-Los Angeles_2027-04_7a15dias_google_explore": {
@@ -814,6 +844,10 @@
       },
       {
         "quando": "2026-11-23T01:19:54+00:00",
+        "preco": 5898.0
+      },
+      {
+        "quando": "2026-11-24T01:16:45+00:00",
         "preco": 5898.0
       }
     ],
@@ -903,6 +937,10 @@
       {
         "quando": "2026-11-23T01:19:54+00:00",
         "preco": 6597.0
+      },
+      {
+        "quando": "2026-11-24T01:16:45+00:00",
+        "preco": 5704.0
       }
     ],
     "ultimo_alerta": null,
@@ -995,6 +1033,10 @@
       {
         "quando": "2026-11-23T01:19:54+00:00",
         "preco": 6557.0
+      },
+      {
+        "quando": "2026-11-24T01:16:45+00:00",
+        "preco": 6106.0
       }
     ],
     "ultimo_alerta": null,
@@ -1040,6 +1082,10 @@
       },
       {
         "quando": "2026-11-23T01:19:54+00:00",
+        "preco": 6136.0
+      },
+      {
+        "quando": "2026-11-24T01:16:45+00:00",
         "preco": 6136.0
       }
     ],
@@ -1087,6 +1133,10 @@
       {
         "quando": "2026-11-23T01:19:54+00:00",
         "preco": 5645.0
+      },
+      {
+        "quando": "2026-11-24T01:16:45+00:00",
+        "preco": 5645.0
       }
     ],
     "ultimo_alerta": null,
@@ -1128,6 +1178,10 @@
       },
       {
         "quando": "2026-11-23T01:20:07+00:00",
+        "preco": 5786.0
+      },
+      {
+        "quando": "2026-11-24T01:16:57+00:00",
         "preco": 5786.0
       }
     ],
@@ -1179,6 +1233,10 @@
       {
         "quando": "2026-11-23T01:20:07+00:00",
         "preco": 4649.0
+      },
+      {
+        "quando": "2026-11-24T01:16:57+00:00",
+        "preco": 5852.0
       }
     ],
     "ultimo_alerta": null,
@@ -1225,6 +1283,10 @@
       {
         "quando": "2026-11-23T01:20:07+00:00",
         "preco": 7870.0
+      },
+      {
+        "quando": "2026-11-24T01:16:57+00:00",
+        "preco": 7883.0
       }
     ],
     "ultimo_alerta": null,
@@ -1271,6 +1333,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 7099.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 7099.0
       }
     ],
     "ultimo_alerta": null,
@@ -1313,6 +1379,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 5232.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 5225.0
       }
     ],
     "ultimo_alerta": null,
@@ -1359,6 +1429,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 5354.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 5349.0
       }
     ],
     "ultimo_alerta": null,
@@ -1404,6 +1478,10 @@
       },
       {
         "quando": "2026-11-23T01:20:36+00:00",
+        "preco": 5545.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
         "preco": 5545.0
       }
     ],
@@ -1451,6 +1529,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 5871.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 5669.0
       }
     ],
     "ultimo_alerta": null,
@@ -1500,6 +1582,10 @@
       },
       {
         "quando": "2026-11-23T01:20:36+00:00",
+        "preco": 4840.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
         "preco": 4840.0
       }
     ],
@@ -1551,6 +1637,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 5647.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 5647.0
       }
     ],
     "ultimo_alerta": null,
@@ -1596,6 +1686,10 @@
       },
       {
         "quando": "2026-11-23T01:20:36+00:00",
+        "preco": 8597.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
         "preco": 8597.0
       }
     ],
@@ -1647,6 +1741,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 4444.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 4891.0
       }
     ],
     "ultimo_alerta": null,
@@ -1692,6 +1790,10 @@
       },
       {
         "quando": "2026-11-23T01:20:36+00:00",
+        "preco": 5101.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
         "preco": 5101.0
       }
     ],
@@ -1743,6 +1845,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 4977.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 4977.0
       }
     ],
     "ultimo_alerta": null,
@@ -1780,6 +1886,10 @@
       },
       {
         "quando": "2026-11-23T01:20:36+00:00",
+        "preco": 5992.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
         "preco": 5992.0
       }
     ],
@@ -1831,6 +1941,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 5770.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 5411.0
       }
     ],
     "ultimo_alerta": null,
@@ -1864,6 +1978,10 @@
       },
       {
         "quando": "2026-11-23T01:20:36+00:00",
+        "preco": 5127.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
         "preco": 5127.0
       }
     ],
@@ -1907,6 +2025,10 @@
       {
         "quando": "2026-11-23T01:19:54+00:00",
         "preco": 5757.0
+      },
+      {
+        "quando": "2026-11-24T01:16:45+00:00",
+        "preco": 5398.0
       }
     ],
     "ultimo_alerta": null,
@@ -1944,6 +2066,10 @@
       },
       {
         "quando": "2026-11-23T01:20:07+00:00",
+        "preco": 3330.0
+      },
+      {
+        "quando": "2026-11-24T01:16:57+00:00",
         "preco": 3330.0
       }
     ],
@@ -2004,6 +2130,10 @@
       },
       {
         "quando": "2026-11-23T01:20:07+00:00",
+        "preco": 5814.0
+      },
+      {
+        "quando": "2026-11-24T01:16:57+00:00",
         "preco": 5814.0
       }
     ],
@@ -2401,6 +2531,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 6515.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 5985.0
       }
     ],
     "ultimo_alerta": null,
@@ -2435,6 +2569,10 @@
       {
         "quando": "2026-11-23T01:19:54+00:00",
         "preco": 1149.0
+      },
+      {
+        "quando": "2026-11-24T01:16:45+00:00",
+        "preco": 1185.0
       }
     ],
     "ultimo_alerta": null,
@@ -2619,6 +2757,10 @@
       {
         "quando": "2026-11-23T01:20:36+00:00",
         "preco": 5370.0
+      },
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 5370.0
       }
     ],
     "ultimo_alerta": null,
@@ -2736,6 +2878,20 @@
       "grupo": "Europa",
       "origem": "REC",
       "destino": "Viena"
+    }
+  },
+  "REC-Santorini_2027-04_7a15dias_google_explore": {
+    "precos": [
+      {
+        "quando": "2026-11-24T01:17:21+00:00",
+        "preco": 10147.0
+      }
+    ],
+    "ultimo_alerta": null,
+    "info": {
+      "grupo": "Europa",
+      "origem": "REC",
+      "destino": "Santorini"
     }
   }
 }
