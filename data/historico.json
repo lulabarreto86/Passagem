@@ -166,6 +166,10 @@
       {
         "quando": "2026-11-26T01:23:30+00:00",
         "preco": 2196.0
+      },
+      {
+        "quando": "2026-11-28T01:21:46+00:00",
+        "preco": 2023.0
       }
     ],
     "ultimo_alerta": null,
@@ -228,9 +232,16 @@
       {
         "quando": "2026-11-27T01:27:42+00:00",
         "preco": 972.0
+      },
+      {
+        "quando": "2026-11-28T01:21:59+00:00",
+        "preco": 724.0
       }
     ],
-    "ultimo_alerta": null,
+    "ultimo_alerta": {
+      "quando": "2026-11-28T01:21:59+00:00",
+      "preco": 724.0
+    },
     "info": {
       "grupo": "Brasil e América do Sul",
       "origem": "JPA",
@@ -286,6 +297,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 2055.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 1857.0
       }
     ],
     "ultimo_alerta": null,
@@ -344,6 +359,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 999.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 831.0
       }
     ],
     "ultimo_alerta": null,
@@ -997,9 +1016,26 @@
       "https://pontospravoar.com/?p=152128",
       "https://pontospravoar.com/?p=152172",
       "https://pontospravoar.com/?p=152199",
-      "https://pontospravoar.com/?p=152193"
+      "https://pontospravoar.com/?p=152193",
+      "https://passageirodeprimeira.com/?p=584899",
+      "https://passageirodeprimeira.com/?p=586284",
+      "https://passageirodeprimeira.com/?p=586364",
+      "https://passageirodeprimeira.com/?p=586247",
+      "https://passageirodeprimeira.com/?p=586344",
+      "https://passageirodeprimeira.com/?p=586271",
+      "https://passageirodeprimeira.com/?p=586315",
+      "https://passageirodeprimeira.com/?p=586162",
+      "https://pontospravoar.com/?p=152368",
+      "https://pontospravoar.com/?p=151876",
+      "https://pontospravoar.com/?p=152317",
+      "https://pontospravoar.com/?p=152286",
+      "https://pontospravoar.com/?p=152344",
+      "https://pontospravoar.com/?p=152148",
+      "https://pontospravoar.com/?p=152121",
+      "https://pontospravoar.com/?p=152295",
+      "https://pontospravoar.com/?p=152308"
     ],
-    "explorar_ultima_execucao": "2026-11-27T01:27:58+00:00",
+    "explorar_ultima_execucao": "2026-11-28T01:22:17+00:00",
     "resumo_ultimo_envio": "2026-11-22"
   },
   "NAT-Los Angeles_2027-04_7a15dias_google_explore": {
@@ -1051,6 +1087,10 @@
       {
         "quando": "2026-11-27T01:27:23+00:00",
         "preco": 6320.0
+      },
+      {
+        "quando": "2026-11-28T01:21:46+00:00",
+        "preco": 5692.0
       }
     ],
     "ultimo_alerta": null,
@@ -1105,6 +1145,10 @@
       {
         "quando": "2026-11-27T01:27:23+00:00",
         "preco": 4868.0
+      },
+      {
+        "quando": "2026-11-28T01:21:46+00:00",
+        "preco": 4757.0
       }
     ],
     "ultimo_alerta": null,
@@ -1159,6 +1203,10 @@
       {
         "quando": "2026-11-27T01:27:23+00:00",
         "preco": 6214.0
+      },
+      {
+        "quando": "2026-11-28T01:21:46+00:00",
+        "preco": 5510.0
       }
     ],
     "ultimo_alerta": null,
@@ -1221,6 +1269,10 @@
       {
         "quando": "2026-11-27T01:27:23+00:00",
         "preco": 6095.0
+      },
+      {
+        "quando": "2026-11-28T01:21:46+00:00",
+        "preco": 4718.0
       }
     ],
     "ultimo_alerta": null,
@@ -1340,6 +1392,10 @@
       {
         "quando": "2026-11-27T01:27:23+00:00",
         "preco": 5083.0
+      },
+      {
+        "quando": "2026-11-28T01:21:46+00:00",
+        "preco": 4996.0
       }
     ],
     "ultimo_alerta": {
@@ -1405,9 +1461,16 @@
       {
         "quando": "2026-11-27T01:27:23+00:00",
         "preco": 4829.0
+      },
+      {
+        "quando": "2026-11-28T01:21:46+00:00",
+        "preco": 4735.0
       }
     ],
-    "ultimo_alerta": null,
+    "ultimo_alerta": {
+      "quando": "2026-11-28T01:21:46+00:00",
+      "preco": 4735.0
+    },
     "info": {
       "grupo": "Europa",
       "origem": "NAT",
@@ -1467,6 +1530,10 @@
       {
         "quando": "2026-11-27T01:27:23+00:00",
         "preco": 5759.0
+      },
+      {
+        "quando": "2026-11-28T01:21:46+00:00",
+        "preco": 4765.0
       }
     ],
     "ultimo_alerta": null,
@@ -1525,6 +1592,10 @@
       {
         "quando": "2026-11-27T01:27:42+00:00",
         "preco": 4782.0
+      },
+      {
+        "quando": "2026-11-28T01:21:59+00:00",
+        "preco": 4675.0
       }
     ],
     "ultimo_alerta": null,
@@ -1591,6 +1662,10 @@
       {
         "quando": "2026-11-27T01:27:42+00:00",
         "preco": 5079.0
+      },
+      {
+        "quando": "2026-11-28T01:21:59+00:00",
+        "preco": 4270.0
       }
     ],
     "ultimo_alerta": null,
@@ -1653,6 +1728,10 @@
       {
         "quando": "2026-11-27T01:27:42+00:00",
         "preco": 7763.0
+      },
+      {
+        "quando": "2026-11-28T01:21:59+00:00",
+        "preco": 6749.0
       }
     ],
     "ultimo_alerta": null,
@@ -1711,6 +1790,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 7062.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 5729.0
       }
     ],
     "ultimo_alerta": null,
@@ -1765,6 +1848,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 4901.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 4310.0
       }
     ],
     "ultimo_alerta": null,
@@ -1827,6 +1914,10 @@
       {
         "quando": "2026-11-27T01:27:58+00:00",
         "preco": 5348.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 5222.0
       }
     ],
     "ultimo_alerta": null,
@@ -1889,6 +1980,10 @@
       {
         "quando": "2026-11-27T01:27:58+00:00",
         "preco": 4865.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 4770.0
       }
     ],
     "ultimo_alerta": null,
@@ -1947,6 +2042,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 4784.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 5301.0
       }
     ],
     "ultimo_alerta": null,
@@ -2009,6 +2108,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 4702.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 4032.0
       }
     ],
     "ultimo_alerta": null,
@@ -2075,6 +2178,10 @@
       {
         "quando": "2026-11-27T01:27:58+00:00",
         "preco": 5427.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 5702.0
       }
     ],
     "ultimo_alerta": null,
@@ -2199,6 +2306,10 @@
       {
         "quando": "2026-11-27T01:27:58+00:00",
         "preco": 4395.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 4362.0
       }
     ],
     "ultimo_alerta": null,
@@ -2261,6 +2372,10 @@
       {
         "quando": "2026-11-27T01:27:58+00:00",
         "preco": 4021.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 4098.0
       }
     ],
     "ultimo_alerta": {
@@ -2326,6 +2441,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 4708.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 4054.0
       }
     ],
     "ultimo_alerta": null,
@@ -2442,6 +2561,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 4794.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 4655.0
       }
     ],
     "ultimo_alerta": null,
@@ -2488,6 +2611,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 4742.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 4421.0
       }
     ],
     "ultimo_alerta": null,
@@ -2546,6 +2673,10 @@
       {
         "quando": "2026-11-27T01:27:23+00:00",
         "preco": 4913.0
+      },
+      {
+        "quando": "2026-11-28T01:21:46+00:00",
+        "preco": 4819.0
       }
     ],
     "ultimo_alerta": null,
@@ -2600,9 +2731,16 @@
       {
         "quando": "2026-11-27T01:27:42+00:00",
         "preco": 2985.0
+      },
+      {
+        "quando": "2026-11-28T01:21:59+00:00",
+        "preco": 2424.0
       }
     ],
-    "ultimo_alerta": null,
+    "ultimo_alerta": {
+      "quando": "2026-11-28T01:21:59+00:00",
+      "preco": 2424.0
+    },
     "info": {
       "grupo": "Brasil e América do Sul",
       "origem": "JPA",
@@ -3080,6 +3218,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 5954.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 5747.0
       }
     ],
     "ultimo_alerta": null,
@@ -3318,6 +3460,10 @@
       {
         "quando": "2026-11-26T01:24:11+00:00",
         "preco": 4920.0
+      },
+      {
+        "quando": "2026-11-28T01:22:17+00:00",
+        "preco": 5167.0
       }
     ],
     "ultimo_alerta": null,
